@@ -4,6 +4,7 @@ using UnityEngine;
 public class InteractState : AbstractState
 {
     public Interactable _interactable;
+    private bool upgradeInput;
     
     public InteractState(Controller controller, Interactable interactable) : base(controller)
     {
@@ -11,6 +12,22 @@ public class InteractState : AbstractState
         _interactable = interactable;
         _interactable.Wear(_controller);
         controller.couldCreate = false;
+    }
+
+    public override void Update()
+    {
+        if (_interactable.existUpgrade)
+        {
+            if (Input.GetKey(_controller.upgradeKey) && !upgradeInput)
+            {
+                upgradeInput = true;
+                _interactable.Upgrade();
+            }
+            else if(!Input.GetKey(_controller.upgradeKey)) upgradeInput = false;
+        }
+
+        base.Update();
+           
     }
 
     public override void Interact()

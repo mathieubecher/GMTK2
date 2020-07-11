@@ -45,16 +45,16 @@
         <option value="$PROJECT_DIR$/Assets/Script/LifeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LifeBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/FPS.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AttackState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IdleState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/ButtonPew.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/InfosGestor.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Chicken.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" />
       </list>
     </option>
   </component>
@@ -93,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594416760517</updated>
       <workItem from="1594416765769" duration="14252000" />
-      <workItem from="1594454164761" duration="16576000" />
+      <workItem from="1594454164761" duration="19540000" />
     </task>
     <servers />
   </component>

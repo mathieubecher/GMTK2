@@ -7,17 +7,23 @@ using UnityEngine;
 public class Tower : Interactable
 {
     [Header("Stat")]
+    public float damage;
     public float cadence;
     [Range(0,100)] public float area;
     [SerializeField] private GameObject bullet;
     public int price = 10;
+
+    [Header("Upgrade")] 
+    public Tower upgrade;
     
     [Header("Infos")]
     private float timer;
     [SerializeField] private Detect detect;
+    [SerializeField] private Transform bulletSpawnPos;
 
     private void Awake()
     {
+        existUpgrade = upgrade != null;
         base.Awake();
         detect.GetComponent<SphereCollider>().radius = area;
     }
@@ -42,10 +48,26 @@ public class Tower : Interactable
             pew.gameObject.SetActive(false);
         }
     }
+    
+    public override void Upgrade()
+    {
+        GameManager manager = FindObjectOfType<GameManager>();
+        if (manager.coins >= upgrade.price)
+        {
+            Debug.Log("could upgrade");
+            Tower upgradeInstance = Instantiate(upgrade, transform.position, Quaternion.identity);
+            ((InteractState) manager.controller.state)._interactable = upgradeInstance;
+            upgradeInstance.Wear(manager.controller);
+            
+            manager.coins -= upgrade.price;
+            Destroy(this.gameObject);
+            
+        }
+    }
 
     private void Shoot(Mob mob)
     {
-        GameObject bulletObject = Instantiate(bullet, transform.position, Quaternion.identity);
+        GameObject bulletObject = Instantiate(bullet, bulletSpawnPos.position, Quaternion.identity);
         bulletObject.GetComponent<Bullet>().target = mob;
     }
 
@@ -54,6 +76,7 @@ public class Tower : Interactable
         timer = cadence;
         base.Wear(controller);
     }
+    
 
     #if UNITY_EDITOR
     private void OnDrawGizmos()

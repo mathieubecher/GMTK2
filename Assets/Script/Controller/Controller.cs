@@ -35,6 +35,7 @@ public class Controller : MonoBehaviour
     [SerializeField] private KeyCode attackKey = KeyCode.Space;
     private bool releaseAttack = true;
     
+    public KeyCode upgradeKey = KeyCode.Tab;
     
 
 

@@ -10,6 +10,7 @@ public abstract class Interactable : MonoBehaviour
 
     protected BoxCollider collider;
     public TextMeshPro pew;
+    [HideInInspector] public bool existUpgrade = false;
 
     protected void Awake()
     {
@@ -41,5 +42,10 @@ public abstract class Interactable : MonoBehaviour
         collider.enabled = true;
         transform.position = position;
         active = true;
+    }
+
+    public virtual void Upgrade()
+    {
+        return;
     }
 }
