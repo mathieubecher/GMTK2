@@ -16,7 +16,6 @@ public class Controller : MonoBehaviour
     [HideInInspector] public AbstractState state;
     [HideInInspector] public Direction direction;
 
-    //[HideInInspector]
     public Interactable interactTo;
 
     [Header("Controller")]

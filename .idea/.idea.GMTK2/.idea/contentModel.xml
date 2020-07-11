@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\mbelk\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -7,6 +7,8 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Script" t="Include">
+          <e p="Bullet.cs" t="Include" />
+          <e p="Chicken.cs" t="Include" />
           <e p="Controller" t="Include">
             <e p="Controller.cs" t="Include" />
             <e p="Infos" t="Include">
@@ -20,7 +22,10 @@
               <e p="InteractState.cs" t="Include" />
             </e>
           </e>
+          <e p="FPS.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
           <e p="Interactable" t="Include">
+            <e p="Detect.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
             <e p="Tower.cs" t="Include" />
           </e>

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9da77b6-a1f5-45ce-ad1e-e0573d73e528" name="Default Changelist" comment="" />
@@ -10,13 +10,17 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Detect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/Infos/WearPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/State/AttackState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/Infos/AttackPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Mob/Mob.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/FPS.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/State/AbstractState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/State/IdleState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -28,15 +32,19 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IddleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/Infos/WearPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AbstractState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IdleState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AttackState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/Infos/AttackPoint.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/FPS.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Detect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Mob.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" />
       </list>
     </option>
   </component>
@@ -45,6 +53,12 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value=";" />
+    </option>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -68,7 +82,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594416760517</updated>
-      <workItem from="1594416765769" duration="14229000" />
+      <workItem from="1594416765769" duration="14252000" />
+      <workItem from="1594454164761" duration="8785000" />
     </task>
     <servers />
   </component>

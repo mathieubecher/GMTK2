@@ -8,12 +8,12 @@ public abstract class Interactable : MonoBehaviour
 {
     public bool active = true;
 
-    private Collider collider;
+    protected BoxCollider collider;
     public TextMeshPro pew;
 
-    void Awake()
+    protected void Awake()
     {
-        collider = GetComponent<Collider>();
+        collider = GetComponent<BoxCollider>();
     }
     // Update is called once per frame
     void Update()
