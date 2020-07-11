@@ -7,6 +7,7 @@ public class Mob : LifeController
     [Header("Stat")]
     [SerializeField] public float damage = 1;
     [SerializeField] private float speed = 4;
+    [HideInInspector] public float multiplier = 1;
     [Header("Timer")]
     [SerializeField] private float counter = 1;
     [SerializeField] private float interval = 350;
@@ -28,7 +29,7 @@ public class Mob : LifeController
     {
         Vector3 velocity = (_target.position - transform.position);
         velocity.y = 0;
-        velocity = velocity.normalized * speed;
+        velocity = velocity.normalized * speed * multiplier;
         _rigidbody.velocity = velocity;
     }
     
