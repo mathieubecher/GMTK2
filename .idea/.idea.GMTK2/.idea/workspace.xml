@@ -15,16 +15,16 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/Infos/WearPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/State/AttackState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Mob/Spawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/ButtonPew.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/UI/InfosGestor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/LifeBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/Infos/AttackPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LifeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Chicken.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Mob/Mob.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Script/FPS.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/State/AbstractState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/State/IdleState.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -36,23 +36,25 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IddleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/Infos/WearPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AbstractState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IdleState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AttackState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/Infos/AttackPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/FPS.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/Detect.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Chicken.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Mob.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LifeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LifeBar.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/FPS.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AttackState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IdleState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UI/ButtonPew.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/UI/InfosGestor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Chicken.cs" />
       </list>
     </option>
   </component>
@@ -91,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594416760517</updated>
       <workItem from="1594416765769" duration="14252000" />
-      <workItem from="1594454164761" duration="12358000" />
+      <workItem from="1594454164761" duration="16576000" />
     </task>
     <servers />
   </component>

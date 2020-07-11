@@ -15,8 +15,8 @@ public class Controller : MonoBehaviour
     [HideInInspector] public Vector2 velocity;
     [HideInInspector] public AbstractState state;
     [HideInInspector] public Direction direction;
-
-    public Interactable interactTo;
+    [HideInInspector] public Interactable interactTo;
+    [HideInInspector] public bool couldCreate = false;
 
     [Header("Controller")]
     [Range(0, 10),SerializeField] public float speed = 3;
@@ -34,6 +34,8 @@ public class Controller : MonoBehaviour
     
     [SerializeField] private KeyCode attackKey = KeyCode.Space;
     private bool releaseAttack = true;
+    
+    
 
 
     // Start is called before the first frame update

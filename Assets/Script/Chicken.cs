@@ -5,6 +5,8 @@ using UnityEngine;
 public class Chicken : LifeController
 {
 
+    [Range(0,15)]
+    public float speed = 3;
     // Update is called once per frame
     void Update()
     {

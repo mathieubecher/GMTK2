@@ -52,6 +52,7 @@ MonoBehaviour:
   cadence: 2
   area: 10
   bullet: {fileID: 9057243909410584443, guid: 7cb1b0e237099d848b97757c221be846, type: 3}
+  price: 10
   detect: {fileID: 2500335949351990864}
 --- !u!65 &1575556906149689868
 BoxCollider:
@@ -130,7 +131,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1575556907118691666
 RectTransform:
   m_ObjectHideFlags: 0

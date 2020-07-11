@@ -464,6 +464,16 @@ PrefabInstance:
       propertyPath: pnj
       value: 
       objectReference: {fileID: 9132805543241487749}
+    - target: {fileID: 9223013933161922029, guid: ca9c01b51cb6d494791fff14a894262e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9223013933161922029, guid: ca9c01b51cb6d494791fff14a894262e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.05
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca9c01b51cb6d494791fff14a894262e, type: 3}
 --- !u!4 &3407400419515109540 stripped

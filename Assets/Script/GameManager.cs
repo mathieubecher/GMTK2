@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public int coins = 0;
 
     public Chicken chicken;
+    public Controller controller;
     public List<Mob> mobs;
     // Start is called before the first frame update
     void Start()

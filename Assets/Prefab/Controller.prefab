@@ -1259,7 +1259,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0}
   direction: 0
   interactTo: {fileID: 0}
-  speed: 5
+  speed: 7
   attackSpeed: 3
   wearPoint: {fileID: 7988410758554601907}
   attackPoint: {fileID: 1788005038}

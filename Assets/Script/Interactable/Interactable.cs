@@ -32,7 +32,7 @@ public abstract class Interactable : MonoBehaviour
         collider.enabled = false;
         transform.position = controller.wearPoint.wearPoint.position;
         transform.SetParent(controller.transform);
-        active = false;
+        active = true;
     }
 
     public virtual void Release(Vector3 position)

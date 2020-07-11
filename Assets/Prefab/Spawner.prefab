@@ -159,4 +159,4 @@ MonoBehaviour:
   manager: {fileID: 0}
   mobPrefab:
   - {fileID: 975093035703762451, guid: 178d1811bf77bde45b20a66db0d4f61f, type: 3}
-  interval: 1
+  interval: 2

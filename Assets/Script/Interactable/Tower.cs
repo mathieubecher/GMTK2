@@ -10,6 +10,7 @@ public class Tower : Interactable
     public float cadence;
     [Range(0,100)] public float area;
     [SerializeField] private GameObject bullet;
+    public int price = 10;
     
     [Header("Infos")]
     private float timer;

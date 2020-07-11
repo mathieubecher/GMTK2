@@ -7,7 +7,7 @@ public class IdleState : AbstractState
     
     public IdleState(Controller controller) : base(controller)
     {
-        
+        controller.couldCreate = true;
     }
 
     public override void Interact()

@@ -19,7 +19,7 @@ public class FPS : MonoBehaviour
     void Update()
     {
         frames.Add(Time.deltaTime);
-        if (frames.Count > 60) frames.RemoveAt(0);
+        if (frames.Count > 120) frames.RemoveAt(0);
         float mean = 0;
         foreach (var frame in frames)
         {
@@ -27,6 +27,6 @@ public class FPS : MonoBehaviour
         }
 
         mean /= frames.Count;
-        text.text = "FPS : " + (60/mean);
+        text.text = "FPS : " + Mathf.Floor(1/mean);
     }
 }

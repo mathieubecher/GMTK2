@@ -10,6 +10,7 @@ public class InteractState : AbstractState
         multiplier = 0.7f;
         _interactable = interactable;
         _interactable.Wear(_controller);
+        controller.couldCreate = false;
     }
 
     public override void Interact()
