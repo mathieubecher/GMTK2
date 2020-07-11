@@ -90,7 +90,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  speed: 8
+  speed: 15
+  damage: 1
 --- !u!1 &9057243909689692544
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,53 +2,60 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mob : MonoBehaviour
+public class Mob : LifeController
 {
     [Header("Stat")]
-    [SerializeField] private float damage = 1;
+    [SerializeField] public float damage = 1;
     [SerializeField] private float speed = 4;
-    [SerializeField] private float life = 1;
     [Header("Timer")]
     [SerializeField] private float counter = 1;
     [SerializeField] private float interval = 350;
     [Header("Score")]
     [SerializeField] private int points = 50;
     [SerializeField] private int coins = 2;
-    
-    // Start is called before the first frame update
-    void Start()
+
+    private Transform _target;
+    private Rigidbody _rigidbody;
+    void Awake()
     {
-        
+        base.Awake();
+        GameManager manager = FindObjectOfType<GameManager>();
+        _target = manager.chicken.transform;
+        _rigidbody = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        Vector3 velocity = (_target.position - transform.position);
+        velocity.y = 0;
+        velocity = velocity.normalized * speed;
+        _rigidbody.velocity = velocity;
     }
-
+    
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Attack"))
         {
             if (other.gameObject.TryGetComponent(out Bullet bullet))
             {
-                life -= bullet.damage;
+                actualLife -= bullet.damage;
                 Destroy(other.gameObject);
             }
             else
             {
-                life -= 0.5f;
+                actualLife -= 0.5f;
             }
             Debug.Log("ça touche!");    
         }
-        if(life <= 0) Destroy(gameObject);
+        if(actualLife <= 0) Dead();
     }
 
-    void OnDestroy()
+    void Dead()
     {
         GameManager manager = FindObjectOfType<GameManager>();
+        if (manager == null) return;
         manager.coins += coins;
         manager.score += points;
+        Destroy(this.gameObject);
     }
 }

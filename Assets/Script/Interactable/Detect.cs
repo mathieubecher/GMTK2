@@ -13,7 +13,7 @@ public class Detect : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
+        //Debug.Log(other.gameObject.name);
         mobs.Add(other.gameObject.GetComponent<Mob>());    
     }
 
