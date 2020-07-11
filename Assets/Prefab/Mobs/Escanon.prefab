@@ -84,8 +84,9 @@ MonoBehaviour:
   damage: 8
   speed: 1
   multiplier: 1
-  counter: 12
-  interval: 1250
+  counter: 4
+  interval: 878
+  proba: 0.2
   points: 500
   coins: 50
 --- !u!65 &46773316416868330

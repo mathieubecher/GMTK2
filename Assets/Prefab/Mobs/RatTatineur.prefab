@@ -134,7 +134,8 @@ MonoBehaviour:
   speed: 4
   multiplier: 1
   counter: 1
-  interval: 650
+  interval: 614
+  proba: 0.4
   points: 50
   coins: 2
 --- !u!65 &975093035703762448

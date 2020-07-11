@@ -8,9 +8,10 @@ public class Mob : LifeController
     [SerializeField] public float damage = 1;
     [SerializeField] private float speed = 4;
     [HideInInspector] public float multiplier = 1;
-    [Header("Timer")]
-    [SerializeField] private float counter = 1;
-    [SerializeField] private float interval = 350;
+    [Header("Imfos Spawn")]
+    [SerializeField] public int counter = 1;
+    [SerializeField] public float interval = 350;
+    [SerializeField] public float proba = 0.1f;
     [Header("Score")]
     [SerializeField] private int points = 50;
     [SerializeField] private int coins = 2;
@@ -48,7 +49,7 @@ public class Mob : LifeController
             {
                 actualLife -= 0.5f;
             }
-            Debug.Log("ça touche!");    
+            //Debug.Log("ça touche!");    
         }
         if(actualLife <= 0) Dead();
     }

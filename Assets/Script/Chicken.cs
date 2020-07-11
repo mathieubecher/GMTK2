@@ -36,7 +36,7 @@ public class Chicken : LifeController
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.gameObject.name);
+        //Debug.Log(other.gameObject.name);
         if (other.gameObject.layer == LayerMask.NameToLayer("Mob"))
         {
             actualLife -= other.gameObject.GetComponent<Mob>().damage;

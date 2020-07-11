@@ -34,6 +34,8 @@
           <e p="Mob" t="Include">
             <e p="Mob.cs" t="Include" />
             <e p="Spawner.cs" t="Include" />
+            <e p="SpawnManager.cs" t="Include" />
+            <e p="Wave.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="ButtonPew.cs" t="Include" />

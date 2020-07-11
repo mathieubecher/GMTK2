@@ -28,5 +28,5 @@ public class AttackState : AbstractState
     public override void SetDirection() {}
     
     public override void Interact() {type = StateType.Interact; }
-    public override void Attack() {type = StateType.Interact; }
+    public override void Attack() {type = StateType.Attack; }
 }
