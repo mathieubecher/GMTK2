@@ -163,9 +163,9 @@ MonoBehaviour:
   existUpgrade: 0
   damage: 1
   cadence: 1
-  area: 10
+  area: 13.3
   bullet: {fileID: 9057243909410584443, guid: 7cb1b0e237099d848b97757c221be846, type: 3}
-  price: 30
+  price: 10
   upgrade: {fileID: 1575556906149689870, guid: f169f15fcbb62fe4fa7a7a86a95d82f6, type: 3}
   detect: {fileID: 2500335949351990864}
   bulletSpawnPos: {fileID: 2128718210414539435}

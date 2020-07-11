@@ -494,7 +494,7 @@ PrefabInstance:
     - target: {fileID: 1575556906149689871, guid: e6145a7f84cb5064ab86d01c57809abf,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -92.867355
+      value: -83.97
       objectReference: {fileID: 0}
     - target: {fileID: 1575556906149689871, guid: e6145a7f84cb5064ab86d01c57809abf,
         type: 3}
@@ -1163,8 +1163,8 @@ MonoBehaviour:
   score: 0
   coins: 0
   center: {fileID: 604670493}
-  area: 70
-  maxTower: 100
+  area: 45
+  maxTower: 21
   chicken: {fileID: 1645392496}
   controller: {fileID: 327030690}
   towers: []
@@ -1664,7 +1664,7 @@ PrefabInstance:
     - target: {fileID: 1575556906149689871, guid: 43b6d35ddf18c6d4da95399069162898,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -139.23
+      value: -143.25
       objectReference: {fileID: 0}
     - target: {fileID: 1575556906149689871, guid: 43b6d35ddf18c6d4da95399069162898,
         type: 3}
@@ -1674,7 +1674,7 @@ PrefabInstance:
     - target: {fileID: 1575556906149689871, guid: 43b6d35ddf18c6d4da95399069162898,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -97
+      value: -76.61
       objectReference: {fileID: 0}
     - target: {fileID: 1575556906149689871, guid: 43b6d35ddf18c6d4da95399069162898,
         type: 3}
@@ -3078,7 +3078,12 @@ PrefabInstance:
     - target: {fileID: 9132805543241487749, guid: 2665a8ce62621274bbff6375a5f99553,
         type: 3}
       propertyPath: speed
-      value: 1.5
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132805543241487749, guid: 2665a8ce62621274bbff6375a5f99553,
+        type: 3}
+      propertyPath: life
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 9132805543241487768, guid: 2665a8ce62621274bbff6375a5f99553,
         type: 3}

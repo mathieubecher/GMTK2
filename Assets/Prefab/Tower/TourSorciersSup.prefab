@@ -135,7 +135,7 @@ MonoBehaviour:
   cadence: 0
   area: 20
   bullet: {fileID: 0}
-  price: 45
+  price: 200
   upgrade: {fileID: 0}
   detect: {fileID: 4075304256790540276}
   bulletSpawnPos: {fileID: 0}
