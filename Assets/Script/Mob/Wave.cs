@@ -41,7 +41,7 @@ public class Wave
             }
             // Recherche d'un mob
             float rand = Random.value * maxrand;
-            Debug.Log("new mob, actual counter :"+actualCounter + ", callables count : "+callable.Count+", max rand : "+maxrand +", rand : "+rand);
+            //Debug.Log("new mob, actual counter :"+actualCounter + ", callables count : "+callable.Count+", max rand : "+maxrand +", rand : "+rand);
             
             Mob mobToSpawn = callable[0];
             int i = 0;
@@ -57,7 +57,7 @@ public class Wave
             if (i < callable.Count)
             {
                 actualCounter += mobToSpawn.counter;
-                if (actualCounter == counter) timer = 10;
+                if (actualCounter == counter) timer = manager.intervaleWave;
                 else timer = mobToSpawn.interval/1000f;
                 Mob instance = Object.Instantiate(mobToSpawn, spawn.transform.position, Quaternion.identity);
             }
@@ -73,7 +73,7 @@ public class Wave
     public void Next()
     {
         manager.waves.Remove(this);
-        if (manager.waves.Count >= 5 || Random.value >=0f)
+        if (manager.waves.Count >= 5 || Random.value >= manager.probaSplitWave)
         {
             CheckWave(Random.Range(0, manager.spawners.Count), counter + 2);
         }

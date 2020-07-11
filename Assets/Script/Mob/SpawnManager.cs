@@ -5,9 +5,17 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
+    
+    [Range(0,1)]
+    public float probaSplitWave = 0.3f;
+    public float intervaleWave = 10;
+    
+    [Header("List")]
     public List<Spawner> spawners;
     public List<Wave> waves;
     public List<Mob> prefabs;
+    
+    [Header("Debug")]
     public int counterMax;
     public int sizeWave;
 

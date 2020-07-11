@@ -62,10 +62,10 @@
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AttackState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Vague.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Spawner.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Mob/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Mob.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Chicken.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Wave.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Mob/SpawnManager.cs" />
       </list>
     </option>
   </component>
@@ -105,7 +105,7 @@
       <updated>1594416760517</updated>
       <workItem from="1594416765769" duration="14252000" />
       <workItem from="1594454164761" duration="27564000" />
-      <workItem from="1594492255718" duration="9766000" />
+      <workItem from="1594492255718" duration="10887000" />
     </task>
     <servers />
   </component>
