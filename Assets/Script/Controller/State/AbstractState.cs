@@ -49,8 +49,10 @@ public abstract class AbstractState
                 break;
             case StateType.Interact:
                 if(_controller.interactTo != null) _controller.state = new InteractState(_controller,_controller.interactTo);
+                else _controller.state = new IdleState(_controller);
                 break;
             case StateType.Attack:
+                _controller.state = new AttackState(_controller);
                 break;
             default:
                 Debug.Log("Erreur! State non reconnu");

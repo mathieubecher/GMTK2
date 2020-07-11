@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1575556906149689870}
   - component: {fileID: 1575556906149689868}
   - component: {fileID: 1575556906149689869}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Tower
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
@@ -84,7 +84,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1575556906224678693}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 1575556907118691668}
   - component: {fileID: 1575556907118691671}
   - component: {fileID: 1575556907118691670}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: State
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,7 +321,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575556907778600718}
   - component: {fileID: 1575556907778600719}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: square
   m_TagString: Untagged
   m_Icon: {fileID: 0}

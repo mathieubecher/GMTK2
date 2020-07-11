@@ -14,16 +14,19 @@ public class Controller : MonoBehaviour
     [HideInInspector] public Rigidbody rigidbody;
     [HideInInspector] public Vector2 velocity;
     [HideInInspector] public AbstractState state;
+    [HideInInspector] public Direction direction;
+
     //[HideInInspector]
     public Interactable interactTo;
 
     [Header("Controller")]
     [Range(0, 10),SerializeField] public float speed = 3;
-
-    public Direction direction;
+    [Range(0, 10),SerializeField] public float attackSpeed = 3;
     
+    
+    [Header("Infos")]
     public WearPoint wearPoint;
-    
+    public AttackPoint attackPoint;
     public TextMeshPro debugState;
 
     [Header("Input")] 
