@@ -49,7 +49,7 @@ public class Wave
             {
                 mobToSpawn = callable[i];
                 rand -= mobToSpawn.proba;
-                Debug.Log(rand+ " " + mobToSpawn.name);
+                // Debug.Log(rand+ " " + mobToSpawn.name);
                 if (rand > 0) ++i;
             }
             

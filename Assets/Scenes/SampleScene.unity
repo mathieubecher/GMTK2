@@ -1161,7 +1161,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  coins: 5000
+  coins: 0
   center: {fileID: 604670493}
   area: 70
   maxTower: 100
@@ -2956,6 +2956,11 @@ PrefabInstance:
       propertyPath: m_CullingMask.m_Bits
       value: 16183
       objectReference: {fileID: 0}
+    - target: {fileID: 7988410757775079267, guid: 568ffe64a0d0c4a44b0cea1424c3321d,
+        type: 3}
+      propertyPath: orthographic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7988410759171723692, guid: 568ffe64a0d0c4a44b0cea1424c3321d,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -3064,6 +3069,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Mesh
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 9132805543099693222, guid: 2665a8ce62621274bbff6375a5f99553,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9132805543241487749, guid: 2665a8ce62621274bbff6375a5f99553,
         type: 3}
