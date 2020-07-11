@@ -127,10 +127,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6563eb08710df7544beb813c27942bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 1
+  life: 3
   actualLife: 0
   damage: 1
   speed: 4
+  multiplier: 1
   counter: 1
   interval: 350
   points: 50
