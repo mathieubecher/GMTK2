@@ -6,6 +6,13 @@
     <e p="C:\Users\mbelk\Unity\gmtk2\gmtk2" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="2 – Depth" t="Include">
+          <e p="DepthOnlyPass.hlsl" t="Include" />
+          <e p="SurfaceInput.hlsl" t="Include" />
+          <e p="UnlitInput.hlsl" t="Include" />
+          <e p="UnlitMetaPass.hlsl" t="Include" />
+          <e p="UnlitSprite.shader" t="Include" />
+        </e>
         <e p="Script" t="Include">
           <e p="Bullet.cs" t="Include" />
           <e p="Chicken.cs" t="Include" />
