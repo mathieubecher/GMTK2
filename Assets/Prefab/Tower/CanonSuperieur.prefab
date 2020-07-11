@@ -84,7 +84,7 @@ MonoBehaviour:
   cadence: 3
   area: 8
   bullet: {fileID: 9057243909410584443, guid: 2b61a4b50f72c69409aa394dec104adf, type: 3}
-  price: 30
+  price: 90
   upgrade: {fileID: 0}
   detect: {fileID: 2500335949351990864}
   bulletSpawnPos: {fileID: 2128718210414539435}
@@ -261,7 +261,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pew pew
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}

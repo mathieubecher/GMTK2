@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 1575556906149689868}
   - component: {fileID: 1575556906149689869}
   m_Layer: 10
-  m_Name: Tower
+  m_Name: TourelleSimple
   m_TagString: Untagged
   m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ MonoBehaviour:
   cadence: 1
   area: 10
   bullet: {fileID: 9057243909410584443, guid: 7cb1b0e237099d848b97757c221be846, type: 3}
-  price: 10
+  price: 30
   upgrade: {fileID: 1575556906149689870, guid: f169f15fcbb62fe4fa7a7a86a95d82f6, type: 3}
   detect: {fileID: 2500335949351990864}
   bulletSpawnPos: {fileID: 2128718210414539435}
@@ -261,7 +261,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: Pew pew
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 0}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
