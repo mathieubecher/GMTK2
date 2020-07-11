@@ -9,7 +9,6 @@ public abstract class Interactable : MonoBehaviour
     public bool active = true;
 
     protected BoxCollider collider;
-    public TextMeshPro pew;
     [HideInInspector] public bool existUpgrade = false;
 
     protected void Awake()
@@ -20,7 +19,6 @@ public abstract class Interactable : MonoBehaviour
     void Update()
     {
         if(active) Action();
-        else pew.gameObject.SetActive(false);
     }
 
     public virtual void Action()

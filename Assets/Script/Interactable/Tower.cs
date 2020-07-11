@@ -37,15 +37,10 @@ public class Tower : Interactable
             Mob mob = detect.GetNear();
             if (mob != null)
             {
-                pew.gameObject.SetActive(true);
                 Shoot(mob);
                 Debug.DrawLine(transform.position, mob.transform.position, Color.red, 0.5f);
             }
             
-        }
-        else if (timer < cadence - 0.3f)
-        {
-            pew.gameObject.SetActive(false);
         }
     }
     

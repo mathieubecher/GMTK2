@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -8,9 +9,10 @@ public class ButtonPew : MonoBehaviour
 {
     public Tower prefab;
     private GameManager _manager;
-
+    public TextMeshProUGUI price;
     void Awake()
     {
+        price.text = ""+Mathf.Floor(prefab.price);
         _manager = FindObjectOfType<GameManager>();
     }
 

@@ -19,8 +19,9 @@ public class Spawner : MonoBehaviour
         timer -= Time.deltaTime;
         if (timer <= 0)
         {
-            Instantiate(mobPrefab[0], transform.position, Quaternion.identity);
-            timer = interval;
+            Mob mob = mobPrefab[Random.Range(0, mobPrefab.Count)];
+            Instantiate(mob, transform.position, Quaternion.identity);
+            timer = interval * mob.GetInterval()/1000;
         }
     }
 }

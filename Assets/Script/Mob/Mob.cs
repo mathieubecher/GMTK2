@@ -59,4 +59,10 @@ public class Mob : LifeController
         manager.score += points;
         Destroy(this.gameObject);
     }
+
+    public float GetInterval()
+    {
+        interval -= counter;
+        return interval;
+    }
 }

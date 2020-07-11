@@ -10,7 +10,6 @@ public class FreezeArea : Detect
         mobs.Add(other.gameObject.GetComponent<Mob>());
         other.gameObject.GetComponent<Mob>().multiplier = 0.5f;
     }
-
     void OnTriggerExit(Collider other)
     {
         mobs.Remove(other.gameObject.GetComponent<Mob>());   
