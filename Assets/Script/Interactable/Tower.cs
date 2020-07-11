@@ -23,6 +23,7 @@ public class Tower : Interactable
 
     private void Awake()
     {
+        FindObjectOfType<GameManager>().towers.Add(this);
         existUpgrade = upgrade != null;
         base.Awake();
         detect.GetComponent<SphereCollider>().radius = area;

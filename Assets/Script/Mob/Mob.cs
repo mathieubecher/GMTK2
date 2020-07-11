@@ -19,8 +19,10 @@ public class Mob : LifeController
     private Rigidbody _rigidbody;
     void Awake()
     {
+        
         base.Awake();
         GameManager manager = FindObjectOfType<GameManager>();
+        manager.mobs.Add(this);
         _target = manager.chicken.transform;
         _rigidbody = GetComponent<Rigidbody>();
     }

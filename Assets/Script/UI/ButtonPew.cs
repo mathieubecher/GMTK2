@@ -18,15 +18,14 @@ public class ButtonPew : MonoBehaviour
 
     public void OnClick()
     {
-        if (_manager.coins > prefab.price && _manager.controller.couldCreate)
+        if (_manager.coins >= prefab.price && _manager.towers.Count < _manager.maxTower && _manager.controller.couldCreate)
         {
             Debug.Log("create");
             _manager.coins -= prefab.price;
             Tower tower = Instantiate(prefab, _manager.controller.transform.position, Quaternion.identity);
             _manager.controller.interactTo = tower;
             _manager.controller.state.Interact();
-            
         }
         EventSystem.current.SetSelectedGameObject(null);
-    } 
+    }
 }
