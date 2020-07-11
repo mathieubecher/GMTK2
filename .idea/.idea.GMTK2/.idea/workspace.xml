@@ -21,6 +21,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Sorcier.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/Infos/AttackPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/LifeController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Chicken.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,6 +56,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Sorcier.cs" />
       </list>
     </option>
   </component>
@@ -93,7 +95,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594416760517</updated>
       <workItem from="1594416765769" duration="14252000" />
-      <workItem from="1594454164761" duration="19540000" />
+      <workItem from="1594454164761" duration="21020000" />
     </task>
     <servers />
   </component>

@@ -25,8 +25,10 @@
           <e p="GameManager.cs" t="Include" />
           <e p="Interactable" t="Include">
             <e p="Detect.cs" t="Include" />
+            <e p="FreezeArea.cs" t="Include" />
             <e p="Interactable.cs" t="Include" />
             <e p="Tower.cs" t="Include" />
+            <e p="Wizard.cs" t="Include" />
           </e>
           <e p="LifeController.cs" t="Include" />
           <e p="Mob" t="Include">

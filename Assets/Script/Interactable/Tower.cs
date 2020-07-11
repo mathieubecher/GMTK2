@@ -68,7 +68,9 @@ public class Tower : Interactable
     private void Shoot(Mob mob)
     {
         GameObject bulletObject = Instantiate(bullet, bulletSpawnPos.position, Quaternion.identity);
-        bulletObject.GetComponent<Bullet>().target = mob;
+        Bullet bulletInstance = bulletObject.GetComponent<Bullet>();
+        bulletInstance.damage = damage;
+        bulletInstance.target = mob;
     }
 
     public override void Wear(Controller controller)
