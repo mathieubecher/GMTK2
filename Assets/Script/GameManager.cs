@@ -21,9 +21,12 @@ public class GameManager : MonoBehaviour
     public List<Mob> mobs;
     public List<Spawner> spawners;
 
+
+    private AudioSource _source;
     // Start is called before the first frame update
     void Start()
     {
+        _source = GetComponent<AudioSource>();    
         Spawner[] listSpawner = FindObjectsOfType<Spawner>();
         foreach (var spawner in listSpawner)
         {

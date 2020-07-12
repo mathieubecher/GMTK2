@@ -1602,6 +1602,7 @@ GameObject:
   - component: {fileID: 7988410759835520075}
   - component: {fileID: 5295410482669108804}
   - component: {fileID: 6259761855806822627}
+  - component: {fileID: 6333322864600457443}
   m_Layer: 9
   m_Name: Rotate
   m_TagString: Untagged
@@ -1696,3 +1697,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6333322864600457443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988410759835520074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02a82fbcc202b8144a862e111ffa3e6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  source: {fileID: 7843671638942815986}
+  jumps:
+  - {fileID: 8300000, guid: 2d86d0c8373ab4347bb3a44b7fa26622, type: 3}
+  - {fileID: 8300000, guid: 4b9ce5ef9cb1bdc44b1f608dcde09143, type: 3}
+  - {fileID: 8300000, guid: a3deb09a94a50ba439cf8d768f366846, type: 3}
+  - {fileID: 8300000, guid: 874f573611cb26c4ab63aac690e3c540, type: 3}
