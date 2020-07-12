@@ -1924,6 +1924,22 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 9132805541960562699, guid: 2665a8ce62621274bbff6375a5f99553,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+    - target: {fileID: 9132805541960562702, guid: 2665a8ce62621274bbff6375a5f99553,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee,
+        type: 2}
+    - target: {fileID: 9132805541960562702, guid: 2665a8ce62621274bbff6375a5f99553,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
     - target: {fileID: 9132805543099693222, guid: 2665a8ce62621274bbff6375a5f99553,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1948,16 +1964,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SpriteSortPoint
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9132805543241487749, guid: 2665a8ce62621274bbff6375a5f99553,
-        type: 3}
-      propertyPath: speed
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9132805543241487749, guid: 2665a8ce62621274bbff6375a5f99553,
-        type: 3}
-      propertyPath: life
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9132805543241487768, guid: 2665a8ce62621274bbff6375a5f99553,
         type: 3}

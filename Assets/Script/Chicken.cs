@@ -47,7 +47,7 @@ public class Chicken : LifeController
             Destroy(other.gameObject);
             if(actualLife > 0) _sound.Hit(damage);
             else if (!dead) Dead();
-            
+            if (actualLife < 0) actualLife = 0;
         }
     }
 

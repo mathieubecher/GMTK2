@@ -30,6 +30,7 @@ public class Mob : LifeController
     void Update()
     {
         Vector3 velocity = (_target.position - transform.position);
+        if(Mathf.Abs(velocity.x) > 0) transform.localScale = new Vector3(-Mathf.Sign(velocity.x),1,1);
         velocity.y = 0;
         velocity = velocity.normalized * speed * multiplier;
         _rigidbody.velocity = velocity;
