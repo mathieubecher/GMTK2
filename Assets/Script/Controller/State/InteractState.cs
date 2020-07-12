@@ -13,6 +13,7 @@ public class InteractState : AbstractState
         _interactable.Wear(_controller);
         controller.couldCreate = false;
         _controller.animator.SetBool("wear",true);
+        _controller.sound.Wear();
     }
 
     public override void Update()
@@ -41,5 +42,11 @@ public class InteractState : AbstractState
     {
         _interactable.Release(_controller.wearPoint.GetPoint(_controller.direction));
         Reset(StateType.Iddle);
+    }
+
+    public override void Reset(StateType type)
+    {
+        _controller.sound.Release();
+        base.Reset(type);
     }
 }

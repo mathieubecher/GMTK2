@@ -28,6 +28,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/Infos/WearPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/ButtonPew.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Sound/MobSound.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Sound/ControllerSound.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/DrawRadar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/DistanceShake.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" root0="FORCE_HIGHLIGHTING" />
@@ -88,9 +89,10 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IdleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AttackState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AbstractState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Sound/ControllerSound.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" />
       </list>
     </option>
   </component>
@@ -131,7 +133,7 @@
       <workItem from="1594416765769" duration="14252000" />
       <workItem from="1594454164761" duration="27564000" />
       <workItem from="1594492255718" duration="13582000" />
-      <workItem from="1594539475193" duration="29815000" />
+      <workItem from="1594539475193" duration="30703000" />
     </task>
     <servers />
   </component>
