@@ -16,10 +16,13 @@ public class Chicken : LifeController
     [Header("FX")]
     [SerializeField] public SpriteRenderer renderer;
     [SerializeField] private float _hitTimer;
+
+    private Animator _animator;
     
     void Awake()
     {
         base.Awake();
+        _animator = GetComponent<Animator>();
         _manager = FindObjectOfType<GameManager>();
         _sound = GetComponent<ChickenSound>();   
         float angle = Random.Range(0, 2 * Mathf.PI);
@@ -38,8 +41,9 @@ public class Chicken : LifeController
         
         
         if(actualLife > 0){
-            Vector3 velocity = (goTo - transform.position).normalized * speed * Time.deltaTime;
-            transform.position += velocity;
+            Vector3 velocity = (goTo - transform.position).normalized;
+            SetDir(velocity);
+            transform.position += velocity * speed * Time.deltaTime;
             if ((goTo - transform.position).magnitude < 1)
             {
                 float angle = Random.Range(0, 2 * Mathf.PI);
@@ -47,6 +51,22 @@ public class Chicken : LifeController
                 //Debug.DrawLine(goTo, goTo + Vector3.up * 5, Color.red, 20);
             }
         }
+    }
+
+    private void SetDir(Vector3 velocity)
+    {
+        int dir = 0;
+        if (Mathf.Abs(velocity.x) > Mathf.Abs(velocity.z))
+        {
+            if (velocity.x > 0) dir = 3;
+            else dir = 1;
+        }
+        else
+        {
+            if (velocity.z > 0) dir = 0;
+            else dir = 2;
+        }
+        _animator.SetInteger("direction",dir);
     }
 
     void OnTriggerEnter(Collider other)

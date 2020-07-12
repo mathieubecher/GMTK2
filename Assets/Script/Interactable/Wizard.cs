@@ -11,5 +11,11 @@ public class Wizard : Tower
         pos.y = 0;
         
         detect.transform.position = pos;
+        foreach (Mob mob in detect.mobs)
+        {
+            mob.renderer.material.SetFloat("_Freeze",1);
+            mob.gameObject.GetComponent<Mob>().multiplier = 0.5f;
+            
+        }
     }
 }
