@@ -31,9 +31,15 @@ public class Tower : Interactable
         _sound = GetComponent<TowerSound>();   
     }
     
+    
+    
     public override void Action()
     {
         timer -= Time.deltaTime;
+
+        if(detect.GetDirection()) transform.localScale = new Vector3(-1,1,1);
+        else transform.localScale = new Vector3(1,1,1);
+        
         if (timer < 0)
         {
             timer = cadence;

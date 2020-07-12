@@ -5,6 +5,7 @@ using UnityEngine;
 public class Detect : MonoBehaviour
 {
     [SerializeField] public List<Mob> mobs;
+    private bool lastDir;
 
     void Awake()
     {
@@ -35,5 +36,15 @@ public class Detect : MonoBehaviour
             }
             return near;
         }
+    }
+
+    public bool GetDirection()
+    {
+        Mob mob = GetNear();
+        if (mob != null)
+        {
+            lastDir= (mob.transform.position - transform.position).x > 0;
+        }
+        return lastDir;
     }
 }
