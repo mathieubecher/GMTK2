@@ -890,6 +890,31 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 558129121}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &603000543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8559400756345052587, guid: 1dbd633e39097fc4386177b1049b20ef,
+    type: 3}
+  m_PrefabInstance: {fileID: 2393022070445097038}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &603000544
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603000543}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4980fd531cd4851418d41233c32d4caa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &604670492
 GameObject:
   m_ObjectHideFlags: 0
@@ -1972,11 +1997,19 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -51.59961
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream
     - target: {fileID: 8124472816209248701, guid: 1dbd633e39097fc4386177b1049b20ef,
         type: 3}
       propertyPath: Game_Manager
       value: 
       objectReference: {fileID: 605371968}
+=======
+    - target: {fileID: 2393022070430797244, guid: 1dbd633e39097fc4386177b1049b20ef,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 270
+      objectReference: {fileID: 0}
+>>>>>>> Stashed changes
     - target: {fileID: 8962132206299489256, guid: 1dbd633e39097fc4386177b1049b20ef,
         type: 3}
       propertyPath: m_AnchoredPosition.x
