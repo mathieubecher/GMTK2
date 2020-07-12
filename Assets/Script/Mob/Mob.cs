@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
 using UnityEngine;
 
 public class Mob : LifeController
@@ -16,6 +17,11 @@ public class Mob : LifeController
     [SerializeField] private int points = 50;
     [SerializeField] private int coins = 2;
 
+    [Header("FX")]
+    [SerializeField] public SpriteRenderer renderer;
+    [SerializeField] private float _hitTimer;
+    
+    
     private Transform _target;
     private Rigidbody _rigidbody;
     void Awake()
@@ -34,6 +40,13 @@ public class Mob : LifeController
         velocity.y = 0;
         velocity = velocity.normalized * speed * multiplier;
         _rigidbody.velocity = velocity;
+        
+        if (_hitTimer > 0)
+        {
+            _hitTimer -= Time.deltaTime;
+            renderer.material.SetFloat("_Hit", 1);
+        }
+        else renderer.material.SetFloat("_Hit", 0);
     }
     
     void OnTriggerEnter(Collider other)
@@ -50,6 +63,7 @@ public class Mob : LifeController
                 actualLife -= 0.5f;
             }
             //Debug.Log("ça touche!");    
+            _hitTimer = 0.2f;
         }
         if(actualLife <= 0) Dead();
     }
