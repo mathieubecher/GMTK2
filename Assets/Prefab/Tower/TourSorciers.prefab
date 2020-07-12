@@ -5329,7 +5329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84b3eb6205a27ef4aafdaacf8ae5f9b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ThetaScale: 0.03
+  ThetaScale: 0.02
   radius: 10
 --- !u!120 &665539548209398390
 LineRenderer:
@@ -5349,7 +5349,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8199f35df8d8948c4ae1e5f30de0ba76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -11,7 +11,7 @@ public class DrawRadar : MonoBehaviour
     private float Theta = 0f;
 
     void Start ()
-    {       
+    {      
         LineDrawer = GetComponent<LineRenderer>();
     }
 
