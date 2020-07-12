@@ -50,6 +50,8 @@
           <e p="Shake.cs" t="Include" />
           <e p="Sound" t="Include">
             <e p="ChickenSound.cs" t="Include" />
+            <e p="IgnoreSpatial.cs" t="Include" />
+            <e p="MobSound.cs" t="Include" />
             <e p="SpatialController.cs" t="Include" />
             <e p="TowerSound.cs" t="Include" />
           </e>

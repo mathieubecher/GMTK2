@@ -73,6 +73,7 @@ public class Wave
     public void Next()
     {
         manager.waves.Remove(this);
+        if (Object.FindObjectOfType<GameManager>().chicken.dead) return;
         if (manager.waves.Count >= 5 || Random.value >= manager.probaSplitWave)
         {
             CheckWave(Random.Range(0, manager.spawners.Count), counter + 2);

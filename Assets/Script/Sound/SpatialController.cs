@@ -39,9 +39,12 @@ public class SpatialController : MonoBehaviour
         {
             foreach (var source in FindObjectsOfType<AudioSource>())
             {
-                float distance = (transform.position - source.transform.position).magnitude;
-                if (distance > maxDist) source.volume = 0;
-                else source.volume = curve.Evaluate((maxDist - distance) / maxDist);
+                if (!source.TryGetComponent(out IgnoreSpatial _))
+                {
+                    float distance = (transform.position - source.transform.position).magnitude;
+                    if (distance > maxDist) source.volume = 0;
+                    else source.volume = curve.Evaluate((maxDist - distance) / maxDist);
+                }
             }
         }
         else if(ends.Count > 0 && endTimer > 0)
@@ -58,15 +61,20 @@ public class SpatialController : MonoBehaviour
         endTimer = endTimerMax;
         foreach (var source in FindObjectsOfType<AudioSource>())
         {
-            if (!source.TryGetComponent(out Chicken chick))
-            {
-                ends.Add(new SoundEnd(source, source.volume));
+            if(!source.TryGetComponent(out IgnoreSpatial _))
+            { 
+                if (!source.TryGetComponent(out Chicken chick))
+                {
+                    ends.Add(new SoundEnd(source, source.volume));
+                }
+                else
+                {
+                    Debug.Log(chick.GetType().ToString());
+                    source.volume = 1;
+                }
+                
             }
-            else
-            {
-                Debug.Log(chick.GetType().ToString());
-                source.volume = 1;
-            }
+           
         }
     }
 }

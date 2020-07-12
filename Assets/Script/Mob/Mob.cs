@@ -20,13 +20,14 @@ public class Mob : LifeController
     [Header("FX")]
     [SerializeField] public SpriteRenderer renderer;
     [SerializeField] private float _hitTimer;
-    
+    private MobSound _sound;
     
     private Transform _target;
     private Rigidbody _rigidbody;
     void Awake()
     {
         base.Awake();
+        _sound = GetComponent<MobSound>();
         GameManager manager = FindObjectOfType<GameManager>();
         manager.mobs.Add(this);
         _target = manager.chicken.transform;
@@ -70,6 +71,7 @@ public class Mob : LifeController
 
     void Dead()
     {
+        _sound.Dead();
         GameManager manager = FindObjectOfType<GameManager>();
         if (manager == null) return;
         manager.coins += coins;
