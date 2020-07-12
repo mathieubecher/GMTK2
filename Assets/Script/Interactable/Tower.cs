@@ -43,7 +43,7 @@ public class Tower : Interactable
         if (timer < 0)
         {
             timer = cadence;
-            Mob mob = detect.GetNear();
+            Mob mob = detect.GetNearChicken();
             if (mob != null)
             {
                 Shoot(mob);

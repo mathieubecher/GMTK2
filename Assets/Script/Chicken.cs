@@ -36,6 +36,7 @@ public class Chicken : LifeController
         }
         else renderer.material.SetFloat("_Hit", 0);
         
+        
         if(actualLife > 0){
             Vector3 velocity = (goTo - transform.position).normalized * speed * Time.deltaTime;
             transform.position += velocity;
@@ -60,6 +61,7 @@ public class Chicken : LifeController
             {
                 _hitTimer = 0.1f;
                 _sound.Hit(damage);
+                StartCoroutine(Camera.main.GetComponent<Shake>().AddShake(0.1f, 0.2f));
             }
             else if (!dead) Dead();
             if (actualLife < 0) actualLife = 0;

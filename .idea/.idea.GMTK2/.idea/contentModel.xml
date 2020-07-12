@@ -46,6 +46,7 @@
             <e p="SpawnManager.cs" t="Include" />
             <e p="Wave.cs" t="Include" />
           </e>
+          <e p="Shake.cs" t="Include" />
           <e p="Sound" t="Include">
             <e p="ChickenSound.cs" t="Include" />
             <e p="SpatialController.cs" t="Include" />

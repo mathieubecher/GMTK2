@@ -6,9 +6,10 @@ public class Detect : MonoBehaviour
 {
     [SerializeField] public List<Mob> mobs;
     private bool lastDir;
-
+    private GameManager manager;
     void Awake()
     {
+        manager = FindObjectOfType<GameManager>();
         mobs = new List<Mob>();
     }
     
@@ -38,9 +39,24 @@ public class Detect : MonoBehaviour
         }
     }
 
+    public Mob GetNearChicken()
+    {
+        mobs.RemoveAll( x=> x == null);
+        if(mobs.Count == 0) return null;
+        else
+        {
+            Mob near = mobs[0];
+            for (int i = 1; i < mobs.Count; ++i)
+            {
+                if ((near.transform.position - manager.chicken.transform.position).magnitude > (mobs[i].transform.position -manager.chicken.transform.position).magnitude) near = mobs[i];
+            }
+            return near;
+        }
+    }
+
     public bool GetDirection()
     {
-        Mob mob = GetNear();
+        Mob mob = GetNearChicken();
         if (mob != null)
         {
             lastDir= (mob.transform.position - transform.position).x > 0;

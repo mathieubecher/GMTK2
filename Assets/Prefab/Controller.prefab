@@ -646,6 +646,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7988410757775079324}
+  - component: {fileID: 804943504575040993}
   - component: {fileID: 7988410757775079267}
   - component: {fileID: 7988410757775079265}
   - component: {fileID: 7988410758291656478}
@@ -670,6 +671,18 @@ Transform:
   m_Father: {fileID: 7988410759835520075}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 41.97, y: 0, z: 0}
+--- !u!114 &804943504575040993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988410757775079264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31c1eac54f8c0ec478403eab1ff10579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &7988410757775079267
 Camera:
   m_ObjectHideFlags: 0
@@ -1404,6 +1417,7 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   maxDist: 50
+  endTimerMax: 3
 --- !u!82 &7843671638942815986
 AudioSource:
   m_ObjectHideFlags: 0
