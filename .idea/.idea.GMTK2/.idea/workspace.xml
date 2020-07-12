@@ -26,6 +26,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Mob/SpawnManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/Infos/WearPoint.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/UI/ButtonPew.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/DrawRadar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Sound/SpatialController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" root0="FORCE_HIGHLIGHTING" />
@@ -80,6 +81,7 @@
         <option value="$PROJECT_DIR$/Assets/Script/Chicken.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/Detect.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/DrawRadar.cs" />
       </list>
     </option>
   </component>
@@ -120,7 +122,7 @@
       <workItem from="1594416765769" duration="14252000" />
       <workItem from="1594454164761" duration="27564000" />
       <workItem from="1594492255718" duration="13582000" />
-      <workItem from="1594539475193" duration="18793000" />
+      <workItem from="1594539475193" duration="19935000" />
     </task>
     <servers />
   </component>
