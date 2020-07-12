@@ -121,6 +121,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1575556906149689871}
   - component: {fileID: 1575556906149689870}
+  - component: {fileID: -1695392587949831622}
+  - component: {fileID: 8547200566590082788}
   - component: {fileID: 1575556906149689868}
   - component: {fileID: 1575556906149689869}
   m_Layer: 10
@@ -169,6 +171,121 @@ MonoBehaviour:
   upgrade: {fileID: 1575556906149689870, guid: f169f15fcbb62fe4fa7a7a86a95d82f6, type: 3}
   detect: {fileID: 2500335949351990864}
   bulletSpawnPos: {fileID: 2128718210414539435}
+--- !u!114 &-1695392587949831622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575556906149689857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: feea811cd3d06424eb223b085c1dd875, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pew:
+  - {fileID: 8300000, guid: 83acb3c0ae2d37d48bf0852a0c805b92, type: 3}
+  - {fileID: 8300000, guid: 93c090dc47dd98840aba5e0adc7845a5, type: 3}
+  - {fileID: 8300000, guid: 067c866e43a965947a227e6fe836553e, type: 3}
+  - {fileID: 8300000, guid: 391399b592a0ede48bfc3729e993fcfc, type: 3}
+  - {fileID: 8300000, guid: f7d56e0cc38db8143a5388f523046dc1, type: 3}
+  - {fileID: 8300000, guid: bb521c71f19fdaf49ba17dd6aad14a69, type: 3}
+--- !u!82 &8547200566590082788
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575556906149689857}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!65 &1575556906149689868
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Chicken : LifeController
 {
     private GameManager _manager;
-    
+    private ChickenSound _sound;
     [Range(0,15)]
     public float speed = 3;
 
@@ -16,7 +16,7 @@ public class Chicken : LifeController
     {
         base.Awake();
         _manager = FindObjectOfType<GameManager>();
-        
+        _sound = GetComponent<ChickenSound>();   
         float angle = Random.Range(0, 2 * Mathf.PI);
         goTo = _manager.center.position;
     }
@@ -39,8 +39,11 @@ public class Chicken : LifeController
         //Debug.Log(other.gameObject.name);
         if (other.gameObject.layer == LayerMask.NameToLayer("Mob"))
         {
-            actualLife -= other.gameObject.GetComponent<Mob>().damage;
+            float damage = other.gameObject.GetComponent<Mob>().damage;
+            actualLife -= damage;
             Destroy(other.gameObject);
+            _sound.Hit(damage);
+            
         }
     }
 }

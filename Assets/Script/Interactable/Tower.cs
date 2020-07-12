@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class Tower : Interactable
 {
+    private TowerSound _sound;
     [Header("Stat")]
     public float damage;
     public float cadence;
@@ -27,6 +28,7 @@ public class Tower : Interactable
         existUpgrade = upgrade != null;
         base.Awake();
         detect.GetComponent<SphereCollider>().radius = area;
+        _sound = GetComponent<TowerSound>();   
     }
     
     public override void Action()
@@ -63,6 +65,7 @@ public class Tower : Interactable
 
     private void Shoot(Mob mob)
     {
+        _sound.Pew();
         GameObject bulletObject = Instantiate(bullet, bulletSpawnPos.position, Quaternion.identity);
         Bullet bulletInstance = bulletObject.GetComponent<Bullet>();
         bulletInstance.damage = damage;
@@ -80,7 +83,7 @@ public class Tower : Interactable
     private void OnDrawGizmos()
     {
         Handles.color = Color.red;
-        Handles.DrawWireDisc(transform.position,Vector3.up,(area == null)?0:area);
+        Handles.DrawWireDisc(transform.position,Vector3.up,area);
     }
     #endif
 }
