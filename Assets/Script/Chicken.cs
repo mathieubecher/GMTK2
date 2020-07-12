@@ -42,7 +42,7 @@ public class Chicken : LifeController
             float damage = other.gameObject.GetComponent<Mob>().damage;
             actualLife -= damage;
             Destroy(other.gameObject);
-            _sound.Hit(damage);
+            if(actualLife > 0) _sound.Hit(damage);
             
         }
     }

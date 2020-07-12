@@ -82,4 +82,5 @@ public class Controller : MonoBehaviour
     {
         if (interactTo != null && interactTo.GetComponent<Interactable>() == interactTo) interactTo = null;
     }
+    
 }

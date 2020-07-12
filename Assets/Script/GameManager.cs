@@ -46,5 +46,28 @@ public class GameManager : MonoBehaviour
         Handles.DrawWireDisc(center.position,Vector3.up,area);
     }
     #endif
+
+    public float GetChickenLife()
+    {
+        return chicken.actualLife/chicken.life;
+    }
+
+    public bool IsInteractible()
+    {
+        return controller.state.GetType() == typeof(InteractState);
+    }
+
+    public Tower TowerInteractible()
+    {
+        return (Tower)((InteractState)controller.state)._interactable;
+            
+    }
+
+    public Tower GetNearTower()
+    {
+        return (Tower)controller.interactTo;
+    }
+    
+    
     
 }
