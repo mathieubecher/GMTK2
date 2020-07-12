@@ -965,7 +965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: 0
-  coins: 30
+  coins: 1314
   center: {fileID: 604670493}
   area: 37
   maxTower: 21
