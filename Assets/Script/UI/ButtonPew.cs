@@ -9,7 +9,7 @@ public class ButtonPew : MonoBehaviour
 {
     public Tower prefab;
     private GameManager _manager;
-    public Text price;
+    public TextMeshProUGUI price;
     void Awake()
     {
         price.text = ""+Mathf.Floor(prefab.price);
