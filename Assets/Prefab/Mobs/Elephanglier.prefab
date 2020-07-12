@@ -89,6 +89,8 @@ MonoBehaviour:
   proba: 0.1
   points: 500
   coins: 50
+  renderer: {fileID: 46773316601780954}
+  _hitTimer: 0
 --- !u!65 &46773316416868330
 BoxCollider:
   m_ObjectHideFlags: 0

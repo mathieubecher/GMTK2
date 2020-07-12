@@ -4,7 +4,12 @@ Shader "Universal Render Pipeline/Unlit Sprite"
     {
         _MainTex("Texture", 2D) = "white" {}
         _Cutoff("Alpha Cutout", Range(0.0, 1.0)) = 0.5
-
+        _Hit("hit",Float) = 0
+        _HitColor("hitcolor",Color) = (1,0,0)
+        _Freeze("freeze",Float) = 0
+        _FreezeColor("freezecolor",Color) = (0,0,1)
+        _DoubleColor("doublecolor",Color) = (1,0,1)
+        
         // BlendMode
         [HideInInspector] _Surface("__surface", Float) = 0.0
         [HideInInspector] _Blend("__blend", Float) = 0.0
@@ -13,6 +18,7 @@ Shader "Universal Render Pipeline/Unlit Sprite"
         [HideInInspector] _DstBlend("Dst", Float) = 0.0
         [HideInInspector] _ZWrite("ZWrite", Float) = 1.0
         [HideInInspector] _Cull("__cull", Float) = 2.0
+        
 
         // Editmode props
         [HideInInspector] _QueueOffset("Queue offset", Float) = 0.0
@@ -82,7 +88,7 @@ Shader "Universal Render Pipeline/Unlit Sprite"
                 output.vertex = vertexInput.positionCS;
                 output.uv = TRANSFORM_TEX(input.uv, _MainTex);
                 output.fogCoord = ComputeFogFactor(vertexInput.positionCS.z);
-
+                
                 return output;
             }
 
@@ -102,7 +108,12 @@ Shader "Universal Render Pipeline/Unlit Sprite"
 #endif
 
                 color = MixFog(color, input.fogCoord);
-
+                float lum = (0.299 * color.r + 0.587 * color.g + 0.114 * color.b) *0.6 +0.4;
+                half3 fbxColor = _Hit * (1- _Freeze) * _HitColor + _Freeze * (1- _Hit) * _FreezeColor + _DoubleColor * _Freeze * _Hit;
+                float fbxValue = min(1, _Hit + _Freeze);
+                color *= 1 - fbxValue;
+                color += lum * fbxValue * fbxColor;
+                
                 return half4(color, alpha);
             }
             ENDHLSL

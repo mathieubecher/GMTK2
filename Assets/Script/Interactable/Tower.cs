@@ -19,7 +19,7 @@ public class Tower : Interactable
     
     [Header("Infos")]
     private float timer;
-    [SerializeField] private Detect detect;
+    [SerializeField] protected Detect detect;
     [SerializeField] private Transform bulletSpawnPos;
 
     private void Awake()
