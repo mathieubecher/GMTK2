@@ -13,6 +13,10 @@ public class Chicken : LifeController
     private Vector3 goTo;
     public bool dead;
     
+    [Header("FX")]
+    [SerializeField] public SpriteRenderer renderer;
+    [SerializeField] private float _hitTimer;
+    
     void Awake()
     {
         base.Awake();
@@ -25,6 +29,13 @@ public class Chicken : LifeController
     // Update is called once per frame
     void Update()
     {
+        if (_hitTimer > 0)
+        {
+            _hitTimer -= Time.deltaTime;
+            renderer.material.SetFloat("_Hit", 1);
+        }
+        else renderer.material.SetFloat("_Hit", 0);
+        
         if(actualLife > 0){
             Vector3 velocity = (goTo - transform.position).normalized * speed * Time.deltaTime;
             transform.position += velocity;
@@ -45,7 +56,11 @@ public class Chicken : LifeController
             float damage = other.gameObject.GetComponent<Mob>().damage;
             actualLife -= damage;
             Destroy(other.gameObject);
-            if(actualLife > 0) _sound.Hit(damage);
+            if (actualLife > 0)
+            {
+                _hitTimer = 0.1f;
+                _sound.Hit(damage);
+            }
             else if (!dead) Dead();
             if (actualLife < 0) actualLife = 0;
         }

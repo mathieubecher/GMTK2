@@ -526,7 +526,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   probaSplitWave: 0.3
-  intervaleWave: 0
+  intervaleWave: 10
   distanceSpawner: 60
   spawners:
   - {fileID: 526665217}
