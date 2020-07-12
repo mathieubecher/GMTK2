@@ -51,7 +51,7 @@ MonoBehaviour:
   active: 1
   existUpgrade: 0
   damage: 1
-  cadence: 0.35
+  cadence: 0.55
   area: 17.6
   bullet: {fileID: 9057243909410584443, guid: 7cb1b0e237099d848b97757c221be846, type: 3}
   price: 100

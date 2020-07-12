@@ -1163,7 +1163,7 @@ MonoBehaviour:
   score: 0
   coins: 0
   center: {fileID: 604670493}
-  area: 45
+  area: 37
   maxTower: 21
   chicken: {fileID: 1645392496}
   controller: {fileID: 327030690}
@@ -3121,7 +3121,7 @@ PrefabInstance:
     - target: {fileID: 9132805543241487749, guid: 2665a8ce62621274bbff6375a5f99553,
         type: 3}
       propertyPath: speed
-      value: 0.35
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9132805543241487749, guid: 2665a8ce62621274bbff6375a5f99553,
         type: 3}
