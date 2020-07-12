@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2339803173929357195}
   - component: {fileID: 2339803173929357204}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: Sapin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2339803174126814460}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: Rotate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 2339803174876824570}
   - component: {fileID: 2339803174876824568}
   - component: {fileID: 2339803174876824569}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2339803175085071497}
   - component: {fileID: 2339803175085071496}
-  m_Layer: 10
+  m_Layer: 15
   m_Name: Arbre
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -220,7 +220,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 8199f35df8d8948c4ae1e5f30de0ba76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
