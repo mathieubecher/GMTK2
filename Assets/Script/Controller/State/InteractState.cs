@@ -12,6 +12,7 @@ public class InteractState : AbstractState
         _interactable = interactable;
         _interactable.Wear(_controller);
         controller.couldCreate = false;
+        _controller.animator.SetBool("wear",true);
     }
 
     public override void Update()

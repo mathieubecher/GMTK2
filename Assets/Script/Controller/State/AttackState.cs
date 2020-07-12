@@ -13,6 +13,7 @@ public class AttackState : AbstractState
         controller.rigidbody.velocity = Vector3.zero;
         controller.attackPoint.Active(controller.direction);
         controller.couldCreate = false;
+        _controller.animator.SetBool("wear",false);
     }
 
     public override void Update()

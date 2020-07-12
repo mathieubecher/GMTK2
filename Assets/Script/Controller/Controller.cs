@@ -12,7 +12,7 @@ public class Controller : MonoBehaviour
     }
     
     [HideInInspector] public Rigidbody rigidbody;
-    [HideInInspector] public Vector2 velocity;
+    public Vector2 velocity;
     [HideInInspector] public AbstractState state;
     [HideInInspector] public Direction direction;
     [HideInInspector] public Interactable interactTo;
@@ -21,7 +21,7 @@ public class Controller : MonoBehaviour
     [Header("Controller")]
     [Range(0, 10),SerializeField] public float speed = 3;
     [Range(0, 10),SerializeField] public float attackSpeed = 3;
-    
+    public Animator animator;
     
     [Header("Infos")]
     public WearPoint wearPoint;
@@ -36,6 +36,8 @@ public class Controller : MonoBehaviour
     private bool releaseAttack = true;
     
     public KeyCode upgradeKey = KeyCode.Tab;
+    
+    
     
 
 

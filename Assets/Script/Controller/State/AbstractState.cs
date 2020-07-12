@@ -20,6 +20,9 @@ public abstract class AbstractState
     public virtual void Update()
     {
         _controller.rigidbody.velocity = new Vector3(_controller.velocity.x, 0,_controller.velocity.y) * _controller.speed * multiplier;
+        _controller.animator.SetFloat("velocity", _controller.velocity.magnitude);
+        if(_controller.velocity.magnitude>0.1f)
+            _controller.animator.SetInteger("dir", (_controller.velocity.y <= 0)?0:1);
     }
 
     public virtual void SetDirection()

@@ -60,6 +60,7 @@
           <e p="UI" t="Include">
             <e p="ButtonPew.cs" t="Include" />
             <e p="FPS.cs" t="Include" />
+            <e p="HUD.cs" t="Include" />
             <e p="InfosGestor.cs" t="Include" />
             <e p="LifeBar.cs" t="Include" />
           </e>

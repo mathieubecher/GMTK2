@@ -49,20 +49,15 @@
         <option value="$PROJECT_DIR$/Assets/Script/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IddleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/Infos/WearPoint.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AbstractState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/Infos/AttackPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LifeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LifeBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/FPS.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IdleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/InfosGestor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/Sorcier.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Map.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/ButtonPew.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AttackState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Vague.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Spawner.cs" />
         <option value="$PROJECT_DIR$/Assets/UnlitSprite.hlsl" />
@@ -71,7 +66,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Mob/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/SoundManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Sound/TowerSound.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Sound/ChickenSound.cs" />
         <option value="$PROJECT_DIR$/Assets/Graph/DepthUnlit/UnlitSprite.shader" />
@@ -86,11 +80,17 @@
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Mob.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Sound/MobSound.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/FreezeArea.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Wizard.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Chicken.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Shake.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/DistanceShake.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/OnFloor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Wizard.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Interactable/Interactable.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IdleState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AttackState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/State/AbstractState.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" />
       </list>
     </option>
   </component>
@@ -131,7 +131,7 @@
       <workItem from="1594416765769" duration="14252000" />
       <workItem from="1594454164761" duration="27564000" />
       <workItem from="1594492255718" duration="13582000" />
-      <workItem from="1594539475193" duration="25659000" />
+      <workItem from="1594539475193" duration="29815000" />
     </task>
     <servers />
   </component>

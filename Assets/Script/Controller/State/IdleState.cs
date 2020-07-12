@@ -8,6 +8,7 @@ public class IdleState : AbstractState
     public IdleState(Controller controller) : base(controller)
     {
         controller.couldCreate = true;
+        _controller.animator.SetBool("wear",false);
     }
 
     public override void Interact()

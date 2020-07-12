@@ -30,7 +30,7 @@ public abstract class Interactable : MonoBehaviour
     {
         collider.enabled = false;
         transform.position = controller.wearPoint.wearPoint.position;
-        transform.SetParent(controller.transform);
+        transform.SetParent(controller.wearPoint.wearPoint.transform);
         active = true;
     }
 
