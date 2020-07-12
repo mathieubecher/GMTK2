@@ -31,6 +31,7 @@
               <e p="InteractState.cs" t="Include" />
             </e>
           </e>
+          <e p="distanceShake.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Interactable" t="Include">
             <e p="Detect.cs" t="Include" />
@@ -43,11 +44,12 @@
           <e p="LifeController.cs" t="Include" />
           <e p="Mob" t="Include">
             <e p="Mob.cs" t="Include" />
+            <e p="Shake.cs" t="Include" />
             <e p="Spawner.cs" t="Include" />
             <e p="SpawnManager.cs" t="Include" />
             <e p="Wave.cs" t="Include" />
           </e>
-          <e p="Shake.cs" t="Include" />
+          <e p="OnFloor.cs" t="Include" />
           <e p="Sound" t="Include">
             <e p="ChickenSound.cs" t="Include" />
             <e p="IgnoreSpatial.cs" t="Include" />
