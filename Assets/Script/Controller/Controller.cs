@@ -12,12 +12,13 @@ public class Controller : MonoBehaviour
     }
     
     [HideInInspector] public Rigidbody rigidbody;
-    public Vector2 velocity;
+    [HideInInspector] public Vector2 velocity;
     [HideInInspector] public AbstractState state;
     [HideInInspector] public Direction direction;
     [HideInInspector] public Interactable interactTo;
     [HideInInspector] public bool couldCreate = false;
-
+    [HideInInspector] public ControllerSound sound;
+    
     [Header("Controller")]
     [Range(0, 10),SerializeField] public float speed = 3;
     [Range(0, 10),SerializeField] public float attackSpeed = 3;
@@ -44,6 +45,7 @@ public class Controller : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        sound = GetComponent<ControllerSound>();
         state= new IdleState(this);
         rigidbody = GetComponent<Rigidbody>();
         
