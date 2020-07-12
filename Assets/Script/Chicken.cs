@@ -11,6 +11,7 @@ public class Chicken : LifeController
 
     private float timer = 0;
     private Vector3 goTo;
+    public bool dead;
     
     void Awake()
     {
@@ -24,13 +25,15 @@ public class Chicken : LifeController
     // Update is called once per frame
     void Update()
     {
-        Vector3 velocity = (goTo - transform.position).normalized * speed * Time.deltaTime;
-        transform.position += velocity;
-        if ((goTo - transform.position).magnitude < 1)
-        {
-            float angle = Random.Range(0, 2 * Mathf.PI);
-            goTo = _manager.center.position + new Vector3(Mathf.Cos(angle),0,Mathf.Sin(angle)) * Random.Range(0,_manager.area);
-            Debug.DrawLine(goTo, goTo + Vector3.up * 5, Color.red, 20);
+        if(actualLife > 0){
+            Vector3 velocity = (goTo - transform.position).normalized * speed * Time.deltaTime;
+            transform.position += velocity;
+            if ((goTo - transform.position).magnitude < 1)
+            {
+                float angle = Random.Range(0, 2 * Mathf.PI);
+                goTo = _manager.center.position + new Vector3(Mathf.Cos(angle),0,Mathf.Sin(angle)) * Random.Range(0,_manager.area);
+                //Debug.DrawLine(goTo, goTo + Vector3.up * 5, Color.red, 20);
+            }
         }
     }
 
@@ -43,7 +46,14 @@ public class Chicken : LifeController
             actualLife -= damage;
             Destroy(other.gameObject);
             if(actualLife > 0) _sound.Hit(damage);
+            else if (!dead) Dead();
             
         }
+    }
+
+    public void Dead()
+    {
+        dead = true;
+        _sound.Dead();
     }
 }

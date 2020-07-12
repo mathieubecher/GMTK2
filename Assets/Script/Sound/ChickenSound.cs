@@ -9,6 +9,8 @@ public class ChickenSound : MonoBehaviour
 
     private float timer = 0;
     [SerializeField] private List<AudioClip> idle;
+    [SerializeField] private AudioClip dead;
+    private bool isdead;
     
     void Awake()
     {
@@ -18,6 +20,7 @@ public class ChickenSound : MonoBehaviour
 
     void Update()
     {
+        if (isdead) return;
         timer -= Time.deltaTime;
         if (timer < 0)
         {
@@ -34,5 +37,14 @@ public class ChickenSound : MonoBehaviour
     public void Iddle()
     {
         _source.PlayOneShot(idle[Random.Range(0,idle.Count)]);
+    }
+
+    public void Dead()
+    {
+        Debug.Log("dafuck");
+        FindObjectOfType<SpatialController>().Dead();
+        _source.PlayOneShot(dead);
+        isdead = true;
+        
     }
 }

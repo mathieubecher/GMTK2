@@ -1382,7 +1382,7 @@ MonoBehaviour:
   attackPoint: {fileID: 1788005038}
   debugState: {fileID: 7988410759171723693}
   interactKey: 101
-  attackKey: 32
+  attackKey: 0
   upgradeKey: 97
 --- !u!114 &1156235946
 MonoBehaviour:
@@ -1402,6 +1402,7 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+  maxDist: 50
 --- !u!82 &7843671638942815986
 AudioSource:
   m_ObjectHideFlags: 0

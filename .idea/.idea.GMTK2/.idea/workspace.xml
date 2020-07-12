@@ -68,14 +68,14 @@
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Mob.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Mob/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/SoundManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Sound/ChickenSound.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Sound/SpatialController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Sound/TowerSound.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/Detect.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/Controller.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Chicken.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Sound/ChickenSound.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Chicken.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Sound/SpatialController.cs" />
       </list>
     </option>
   </component>
@@ -116,7 +116,7 @@
       <workItem from="1594416765769" duration="14252000" />
       <workItem from="1594454164761" duration="27564000" />
       <workItem from="1594492255718" duration="13582000" />
-      <workItem from="1594539475193" duration="7678000" />
+      <workItem from="1594539475193" duration="9905000" />
     </task>
     <servers />
   </component>
