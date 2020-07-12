@@ -80,7 +80,7 @@ public class Tower : Interactable
     private void OnDrawGizmos()
     {
         Handles.color = Color.red;
-        Handles.DrawWireDisc(transform.position,Vector3.up,area);
+        Handles.DrawWireDisc(transform.position,Vector3.up,(area == null)?0:area);
     }
     #endif
 }

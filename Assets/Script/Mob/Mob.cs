@@ -20,7 +20,6 @@ public class Mob : LifeController
     private Rigidbody _rigidbody;
     void Awake()
     {
-        
         base.Awake();
         GameManager manager = FindObjectOfType<GameManager>();
         manager.mobs.Add(this);
@@ -62,7 +61,6 @@ public class Mob : LifeController
         manager.score += points;
         Destroy(this.gameObject);
     }
-
     public float GetInterval()
     {
         interval -= counter;

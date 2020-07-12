@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
@@ -9,6 +10,7 @@ public class SpawnManager : MonoBehaviour
     [Range(0,1)]
     public float probaSplitWave = 0.3f;
     public float intervaleWave = 10;
+    public float distanceSpawner = 50;
     
     [Header("List")]
     public List<Spawner> spawners;
@@ -40,5 +42,17 @@ public class SpawnManager : MonoBehaviour
         }
 
         sizeWave = waves.Count;
+    }
+
+    
+    [ContextMenu("Place Spawner")]
+    void PlaceSpawner()
+    {
+        float angle = 90;
+        foreach (var spawner in spawners)
+        {
+            spawner.transform.position = new Vector3(Mathf.Cos(angle*Mathf.PI/180) * distanceSpawner,0,Mathf.Sin(angle*Mathf.PI/180) * distanceSpawner);
+            angle -= 45;
+        }
     }
 }
