@@ -39,6 +39,7 @@ public abstract class Interactable : MonoBehaviour
         transform.parent = null;
         collider.enabled = true;
         transform.position = position;
+        transform.rotation = Quaternion.identity;
         active = true;
     }
 
