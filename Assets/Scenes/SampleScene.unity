@@ -986,11 +986,11 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 988df5a292de3bc47ac20c92d2eb1b93, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 8e8602a3f77941e48b5d866986d4596c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.4
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1773,6 +1773,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 68340191574112663, guid: 1dbd633e39097fc4386177b1049b20ef,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 38
+      objectReference: {fileID: 0}
     - target: {fileID: 2393022069617064002, guid: 1dbd633e39097fc4386177b1049b20ef,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1882,6 +1887,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2393022069985612800, guid: 1dbd633e39097fc4386177b1049b20ef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5006797118481704801, guid: 1dbd633e39097fc4386177b1049b20ef,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -28
       objectReference: {fileID: 0}
     - target: {fileID: 8124472816209248701, guid: 1dbd633e39097fc4386177b1049b20ef,
         type: 3}

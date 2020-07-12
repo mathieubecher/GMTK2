@@ -10,6 +10,6 @@ public class Jump : MonoBehaviour
 
     public void JumpSound()
     {
-        source.PlayOneShot(jumps[Random.Range(0,jumps.Count)]);
+        source.PlayOneShot(jumps[Random.Range(0,jumps.Count)],0.2f);
     }
 }
