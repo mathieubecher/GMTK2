@@ -80,7 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   active: 1
   existUpgrade: 0
-  damage: 10
+  damage: 15
   cadence: 3
   area: 18.7
   bullet: {fileID: 9057243909410584443, guid: 2b61a4b50f72c69409aa394dec104adf, type: 3}

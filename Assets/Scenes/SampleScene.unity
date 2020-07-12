@@ -3002,6 +3002,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7988410759632446404, guid: 568ffe64a0d0c4a44b0cea1424c3321d,
+        type: 3}
+      propertyPath: upgradeKey
+      value: 97
+      objectReference: {fileID: 0}
     - target: {fileID: 7988410759632446411, guid: 568ffe64a0d0c4a44b0cea1424c3321d,
         type: 3}
       propertyPath: m_Name
@@ -3116,12 +3121,12 @@ PrefabInstance:
     - target: {fileID: 9132805543241487749, guid: 2665a8ce62621274bbff6375a5f99553,
         type: 3}
       propertyPath: speed
-      value: 0.3
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 9132805543241487749, guid: 2665a8ce62621274bbff6375a5f99553,
         type: 3}
       propertyPath: life
-      value: 25
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 9132805543241487768, guid: 2665a8ce62621274bbff6375a5f99553,
         type: 3}

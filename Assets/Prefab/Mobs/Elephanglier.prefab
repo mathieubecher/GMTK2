@@ -79,16 +79,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6563eb08710df7544beb813c27942bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 30
+  life: 70
   actualLife: 0
   damage: 8
   speed: 1
   multiplier: 1
   counter: 12
-  interval: 2924
+  interval: 3924
   proba: 0.1
-  points: 100
-  coins: 5
+  points: 500
+  coins: 50
 --- !u!65 &46773316416868330
 BoxCollider:
   m_ObjectHideFlags: 0
