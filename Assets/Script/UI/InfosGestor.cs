@@ -4,11 +4,10 @@ using TMPro;
 using UnityEngine;
 
 public class InfosGestor : MonoBehaviour
-{
+{    
     private GameManager _manager;
 
-    [SerializeField] private TextMeshProUGUI coins;
-    [SerializeField] private TextMeshProUGUI score;
+    [SerializeField] private TextMeshProUGUI fps;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,17 +17,6 @@ public class InfosGestor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        SetCoints();
-        SetScore();
-    }
-
-    void SetCoints()
-    {
-        coins.text = "Coins : " + _manager.coins;
-    }
-
-    void SetScore()
-    {
-        score.text = "Score : " + _manager.score;
+        if(Input.GetKeyDown(KeyCode.F) && Input.GetKey(KeyCode.LeftControl) && Input.GetKey(KeyCode.LeftShift)) fps.gameObject.SetActive(true);
     }
 }

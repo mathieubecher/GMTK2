@@ -24,7 +24,7 @@ public class Wave
     public void Update()
     {
         timer -= Time.deltaTime;
-        if(actualCounter >= counter && timer < 0) Next();
+        if((actualCounter >= counter && timer < 0) || manager.manager.chicken.dead) Next();
         else if (timer <= 0)
         {
             int maxCounter = counter - actualCounter;
@@ -73,7 +73,7 @@ public class Wave
     public void Next()
     {
         manager.waves.Remove(this);
-        if (Object.FindObjectOfType<GameManager>().chicken.dead) return;
+        if (manager.manager.chicken.dead) return;
         if (manager.waves.Count >= 5 || Random.value >= manager.probaSplitWave)
         {
             CheckWave(Random.Range(0, manager.spawners.Count), counter + 2);

@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public AudioClip musicIntro;
+    private float introTimer;
     [Header("Stat")]
     public int score = 0;
     public int coins = 0;
@@ -32,11 +34,26 @@ public class GameManager : MonoBehaviour
         {
             spawners.Add(spawner);
         }
+        //_source.PlayOneShot(musicIntro);
     }
 
     // Update is called once per frame
     void Update()
     {
+        /*
+        if (introTimer < musicIntro.length)
+        {
+            introTimer += Time.deltaTime;
+            if(introTimer >= musicIntro.length) _source.Play();
+        }
+        */
+
+        if (!_source.isPlaying)
+        {
+            _source.clip = musicIntro;
+            _source.loop = true;
+            _source.Play();
+        }
         towers.RemoveAll(x=>x == null);
         mobs.RemoveAll(x=>x == null);
     }

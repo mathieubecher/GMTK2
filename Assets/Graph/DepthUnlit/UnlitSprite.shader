@@ -111,8 +111,8 @@ Shader "Universal Render Pipeline/Unlit Sprite"
                 float lum = (0.299 * color.r + 0.587 * color.g + 0.114 * color.b) *0.6 +0.4;
                 half3 fbxColor = _Hit * (1- _Freeze) * _HitColor + _Freeze * (1- _Hit) * _FreezeColor + _DoubleColor * _Freeze * _Hit;
                 float fbxValue = min(1, _Hit + _Freeze);
-                color *= 1 - fbxValue;
-                color += lum * fbxValue * fbxColor;
+                color *= 0.3+(1 - fbxValue)*0.7;
+                color += lum * fbxValue * fbxColor*0.7;
                 
                 return half4(color, alpha);
             }

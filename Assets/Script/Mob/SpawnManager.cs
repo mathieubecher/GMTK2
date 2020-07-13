@@ -21,8 +21,10 @@ public class SpawnManager : MonoBehaviour
     public int counterMax;
     public int sizeWave;
 
+    [HideInInspector] public GameManager manager;
     void Start()
     {
+        manager = FindObjectOfType<GameManager>();
         waves = new List<Wave>();
         waves.Add(new Wave(this, 2, spawners[Random.Range(0,spawners.Count)]));
     }

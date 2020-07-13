@@ -90,6 +90,7 @@ public class Chicken : LifeController
 
     public void Dead()
     {
+        _animator.SetTrigger("Dead");
         dead = true;
         _sound.Dead();
     }

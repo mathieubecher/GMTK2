@@ -24,6 +24,10 @@ public class Mob : LifeController
     
     private Transform _target;
     private Rigidbody _rigidbody;
+    
+    public int freeze;
+    [HideInInspector] private bool isfreeze;
+    
     void Awake()
     {
         base.Awake();
@@ -36,6 +40,9 @@ public class Mob : LifeController
 
     void Update()
     {
+        FreezeGestor();
+        
+        
         Vector3 velocity = (_target.position - transform.position);
         if(Mathf.Abs(velocity.x) > 0) transform.localScale = new Vector3(-Mathf.Sign(velocity.x),1,1);
         velocity.y = 0;
@@ -71,16 +78,38 @@ public class Mob : LifeController
 
     void Dead()
     {
-        _sound.Dead();
         GameManager manager = FindObjectOfType<GameManager>();
         if (manager == null) return;
-        manager.coins += coins;
-        manager.score += points;
+        
+        if (manager.chicken.actualLife > 0)
+        {
+            manager.coins += coins;
+            manager.score += points;
+        }
+        
         Destroy(this.gameObject);
     }
     public float GetInterval()
     {
         interval -= counter;
         return interval;
+    }
+
+    public void FreezeGestor()
+    {
+        if (freeze > 0 && !isfreeze)
+        {
+            multiplier = 0.5f;
+            renderer.material.SetFloat("_Freeze",1);
+            isfreeze = true;
+
+        }
+        else if (freeze <= 0 && isfreeze)
+        {
+            Debug.Log("release");
+            multiplier = 1f;
+            renderer.material.SetFloat("_Freeze",0);
+            isfreeze = false;
+        }
     }
 }

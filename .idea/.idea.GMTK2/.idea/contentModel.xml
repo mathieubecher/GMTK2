@@ -51,6 +51,7 @@
             <e p="Wave.cs" t="Include" />
           </e>
           <e p="OnFloor.cs" t="Include" />
+          <e p="Restart.cs" t="Include" />
           <e p="Sound" t="Include">
             <e p="ChickenSound.cs" t="Include" />
             <e p="ControllerSound.cs" t="Include" />
@@ -65,6 +66,7 @@
             <e p="HUD.cs" t="Include" />
             <e p="InfosGestor.cs" t="Include" />
             <e p="LifeBar.cs" t="Include" />
+            <e p="ShowPrice.cs" t="Include" />
           </e>
         </e>
         <e p="TextMesh Pro" t="Include">

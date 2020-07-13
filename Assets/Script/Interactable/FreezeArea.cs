@@ -7,13 +7,13 @@ public class FreezeArea : Detect
     void OnTriggerEnter(Collider other)
     {
         //Debug.Log(other.gameObject.name);
-        mobs.Add(other.gameObject.GetComponent<Mob>());
-        
+        Mob mob = other.gameObject.GetComponent<Mob>();
+        ++mob.freeze;
+
     }
     void OnTriggerExit(Collider other)
     {
-        mobs.Remove(other.gameObject.GetComponent<Mob>());   
-        other.gameObject.GetComponent<Mob>().renderer.material.SetFloat("_Freeze",0);
-        other.gameObject.GetComponent<Mob>().multiplier = 1f;
+        Mob mob = other.gameObject.GetComponent<Mob>();
+        --mob.freeze;
     }
 }
