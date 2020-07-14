@@ -21,9 +21,11 @@ public class HUD : MonoBehaviour
     public Text TowersMaxText2;
     public Text ScoreText1;
     public Text ScoreText2;
+    public Text ToolTipText;
     public ShowPrice Upgrade;
     public GameManager Game_Manager;
     public GameObject Lifebar;
+    public GameObject ToolTip;
     private Animator Lifebar_Animator;
     public Animator Dead;
     private int Coins;
@@ -74,6 +76,24 @@ public class HUD : MonoBehaviour
                 FirstHit = true;
             }
             if(ChickenLife<=0) Dead.SetBool("dead",true);
+        }
+
+        if (Game_Manager.IsInteractible() == true)
+        {
+            ToolTipText.text = "PLACE";
+            ToolTip.SetActive(true);
+            
+        } else
+        {
+            if (Game_Manager.GetNearTower() == true)
+            {
+                ToolTipText.text = "TAKE";
+                ToolTip.SetActive(true);
+                
+            } else
+            {
+                ToolTip.SetActive(false);
+            }
         }
 
         if (Game_Manager.IsInteractible() && Game_Manager.TowerInteractible().existUpgrade && !showUpgrade)
