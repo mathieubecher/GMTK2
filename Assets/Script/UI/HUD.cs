@@ -59,6 +59,10 @@ public class HUD : MonoBehaviour
         ScoreText2.text = Score.ToString();
 
         ChickenLife = Game_Manager.GetChickenLife();
+        if (ChickenLife < 0.2f && ChickenLife != 0)
+        {
+            ChickenLife = 0.1f + ChickenLife*0.1f;
+        }
         MaskBack.rectTransform.anchoredPosition = new Vector3(180, (ChickenLife * -540) - 4);
         Back.rectTransform.anchoredPosition = new Vector3(60, (ChickenLife * 540) - 540);
         MaskFill.rectTransform.anchoredPosition = new Vector3(180, ChickenLife * -540);

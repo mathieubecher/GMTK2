@@ -41,7 +41,14 @@ public class ButtonPew : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             }
             else
             {
-                Locked.SetActive(false);
+                if (_manager.towers.Count == _manager.maxTower)
+                {
+                    Locked.SetActive(true);
+                } else
+                {
+                    Locked.SetActive(false);
+                }
+                
             }
         }
 
