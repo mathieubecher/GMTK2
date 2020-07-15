@@ -92,6 +92,7 @@ MonoBehaviour:
   coins: 5
   renderer: {fileID: 46773316601780954}
   _hitTimer: 0
+  freeze: 0
 --- !u!65 &46773316416868330
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -415,6 +416,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -0.461
       objectReference: {fileID: 0}
+    - target: {fileID: 105994947439534407, guid: ca9c01b51cb6d494791fff14a894262e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 4994746334488564540, guid: ca9c01b51cb6d494791fff14a894262e,
         type: 3}
       propertyPath: m_Name
@@ -490,6 +496,21 @@ PrefabInstance:
       propertyPath: pnj
       value: 
       objectReference: {fileID: 46773316416868329}
+    - target: {fileID: 9204496473107974695, guid: ca9c01b51cb6d494791fff14a894262e,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204496473107974695, guid: ca9c01b51cb6d494791fff14a894262e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.006
+      objectReference: {fileID: 0}
+    - target: {fileID: 9204496473107974695, guid: ca9c01b51cb6d494791fff14a894262e,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca9c01b51cb6d494791fff14a894262e, type: 3}
 --- !u!4 &2345514065712609915 stripped
