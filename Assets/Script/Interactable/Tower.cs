@@ -13,6 +13,7 @@ public class Tower : Interactable
     [Range(0,100)] public float area;
     [SerializeField] private GameObject bullet;
     public int price = 10;
+    public string name;
 
     [Header("Upgrade")] 
     public Tower upgrade;

@@ -22,11 +22,17 @@ public class HUD : MonoBehaviour
     public Text ScoreText1;
     public Text ScoreText2;
     public Text ToolTipText;
-    public ShowPrice Upgrade;
     public GameManager Game_Manager;
     public GameObject Lifebar;
     public GameObject ToolTip;
+    public GameObject Upgrade;
+    public GameObject IconTower;
+    public GameObject IconCannon;
+    public GameObject IconWizard;
+    public Text UpgradePrice;
+    public Text UpgradeDescription;
     private Animator Lifebar_Animator;
+    private Animator Upgrade_Animator;
     public Animator Dead;
     private int Coins;
     private int Towers;
@@ -39,6 +45,7 @@ public class HUD : MonoBehaviour
     {
         SaveChickenLife = ChickenLife;
         Lifebar_Animator = Lifebar.GetComponent<Animator>();
+        Upgrade_Animator = Upgrade.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -100,15 +107,48 @@ public class HUD : MonoBehaviour
             }
         }
 
-        if (Game_Manager.IsInteractible() && Game_Manager.TowerInteractible().existUpgrade && !showUpgrade)
+        if (Game_Manager.IsInteractible() && Game_Manager.TowerInteractible().existUpgrade && (Game_Manager.TowerInteractible().upgrade.price <= Game_Manager.coins) && !showUpgrade)
         {
             showUpgrade = true;
-            Upgrade.BeginUpgrade();
+            Upgrade.SetActive(true);
+            Upgrade_Animator.SetTrigger("Open");
+            UpgradePrice.text = "" + Mathf.Floor(Game_Manager.TowerInteractible().upgrade.price);
+            if (Game_Manager.TowerInteractible().name == "SimpleTower")
+            {
+                IconTower.SetActive(true);
+                IconCannon.SetActive(false);
+                IconWizard.SetActive(false);
+                UpgradeDescription.text = "RATE OF FIRE x3";
+
+            }
+            else if (Game_Manager.TowerInteractible().name == "Cannon")
+            {
+                IconTower.SetActive(false);
+                IconCannon.SetActive(true);
+                IconWizard.SetActive(false);
+                UpgradeDescription.text = "DAMAGE x2.5";
+
+            }
+            else if (Game_Manager.TowerInteractible().name == "Wizard")
+            {
+                IconTower.SetActive(false);
+                IconCannon.SetActive(false);
+                IconWizard.SetActive(true);
+                UpgradeDescription.text = "EFFECT ZONE x2";
+
+            }
         }
-        else if ((!Game_Manager.IsInteractible() || !Game_Manager.TowerInteractible().existUpgrade) && showUpgrade)
+
+        else if ((!Game_Manager.IsInteractible() || !Game_Manager.TowerInteractible().existUpgrade) || (Game_Manager.TowerInteractible().upgrade.price > Game_Manager.coins) && showUpgrade)
         {
             showUpgrade = false;
-            Upgrade.StopUpgrade();
+            Upgrade.SetActive(false);
+
         }
+    }
+
+    public void OnUpgradeButtonClick()
+    {
+        Game_Manager.TowerInteractible().Upgrade();
     }
 }
