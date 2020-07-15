@@ -23,6 +23,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/State/InteractState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/Infos/AttackPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Script/DatAss.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Mob/Wave.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Controller/State/IdleState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Sound/TowerSound.cs" root0="FORCE_HIGHLIGHTING" />
@@ -49,13 +50,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Script/Tower.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interactable.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/State/IddleState.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/Infos/WearPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Controller/Infos/AttackPoint.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/LifeController.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/LifeBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/FPS.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Interactable/Sorcier.cs" />
@@ -95,11 +94,13 @@
         <option value="$PROJECT_DIR$/Assets/Script/Mob/Mob.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/InfosGestor.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Chicken.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Mob/SpawnManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Restart.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/HUD.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/UI/ShowPrice.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Mob/SpawnManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/LifeController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/DatAss.cs" />
       </list>
     </option>
   </component>
@@ -142,6 +143,8 @@
       <workItem from="1594492255718" duration="13582000" />
       <workItem from="1594539475193" duration="34753000" />
       <workItem from="1594635719969" duration="12465000" />
+      <workItem from="1594817870694" duration="576000" />
+      <workItem from="1594846512498" duration="3971000" />
     </task>
     <servers />
   </component>

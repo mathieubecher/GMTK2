@@ -32,6 +32,7 @@
               <e p="InteractState.cs" t="Include" />
             </e>
           </e>
+          <e p="DatAss.cs" t="Include" />
           <e p="distanceShake.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Interactable" t="Include">
@@ -62,6 +63,7 @@
           </e>
           <e p="UI" t="Include">
             <e p="ButtonPew.cs" t="Include" />
+            <e p="CanvasBreakpoint.cs" t="Include" />
             <e p="FPS.cs" t="Include" />
             <e p="HUD.cs" t="Include" />
             <e p="InfosGestor.cs" t="Include" />
