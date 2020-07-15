@@ -31,6 +31,7 @@ public class HUD : MonoBehaviour
     public GameObject IconWizard;
     public Text UpgradePrice;
     public Text UpgradeDescription;
+    public Texture2D cursorArrow;
     private Animator Lifebar_Animator;
     private Animator Upgrade_Animator;
     public Animator Dead;
@@ -46,6 +47,7 @@ public class HUD : MonoBehaviour
         SaveChickenLife = ChickenLife;
         Lifebar_Animator = Lifebar.GetComponent<Animator>();
         Upgrade_Animator = Upgrade.GetComponent<Animator>();
+        Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
     }
 
     // Update is called once per frame

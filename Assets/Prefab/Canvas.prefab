@@ -1958,6 +1958,7 @@ MonoBehaviour:
   IconWizard: {fileID: 6169005299299186488}
   UpgradePrice: {fileID: 7084984535868612859}
   UpgradeDescription: {fileID: 7498149805746583746}
+  cursorArrow: {fileID: 2800000, guid: da351ad6675129e46952ea83db5fc14a, type: 3}
   Dead: {fileID: 8501302929481607428}
 --- !u!1 &2393022069985612800
 GameObject:
