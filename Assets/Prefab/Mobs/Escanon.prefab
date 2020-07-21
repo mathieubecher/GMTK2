@@ -80,10 +80,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6563eb08710df7544beb813c27942bd1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 26
+  life: 49
   actualLife: 0
-  damage: 16
-  speed: 0.5
+  damage: 10
+  speed: 0.6
   multiplier: 1
   counter: 5
   interval: 1878
